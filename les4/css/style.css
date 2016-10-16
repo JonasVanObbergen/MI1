@@ -1,0 +1,43 @@
+body {
+    background-color: #246068;
+    font-family: sans-serif;
+    /*background-image: url(https://media.giphy.com/media/o0vwzuFwCGAFO/giphy.gif);*/
+}
+
+h1{
+    color: #012E34;
+    font-weight: bold;
+    font-size: 5em;
+    border-bottom: solid 2px #69969C;
+    padding-bottom: 10px;
+}
+
+h2, h3{
+    
+    color: #78a6a3;
+    font-size: 2em;
+}
+
+article{
+    
+    height: 200px;
+    width: 80%;
+    margin: auto;
+    
+    background: -moz-linear-gradient(45deg, rgba(255,0,0,1) 0%, rgba(128,0,0,1) 15%, rgba(128,128,0,1) 30%, rgba(0,128,128,1) 39%, rgba(255,255,0,1) 50%, rgba(0,255,255,1) 60%, rgba(0,0,255,1) 71%, rgba(255,0,255,1) 86%, rgba(255,0,0,1) 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(255,0,0,1)), color-stop(15%, rgba(128,0,0,1)), color-stop(30%, rgba(128,128,0,1)), color-stop(39%, rgba(0,128,128,1)), color-stop(50%, rgba(255,255,0,1)), color-stop(60%, rgba(0,255,255,1)), color-stop(71%, rgba(0,0,255,1)), color-stop(86%, rgba(255,0,255,1)), color-stop(100%, rgba(255,0,0,1))); /* safari4+,chrome */
+    background: -webkit-linear-gradient(45deg, rgba(255,0,0,1) 0%, rgba(128,0,0,1) 15%, rgba(128,128,0,1) 30%, rgba(0,128,128,1) 39%, rgba(255,255,0,1) 50%, rgba(0,255,255,1) 60%, rgba(0,0,255,1) 71%, rgba(255,0,255,1) 86%, rgba(255,0,0,1) 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(45deg, rgba(255,0,0,1) 0%, rgba(128,0,0,1) 15%, rgba(128,128,0,1) 30%, rgba(0,128,128,1) 39%, rgba(255,255,0,1) 50%, rgba(0,255,255,1) 60%, rgba(0,0,255,1) 71%, rgba(255,0,255,1) 86%, rgba(255,0,0,1) 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(45deg, rgba(255,0,0,1) 0%, rgba(128,0,0,1) 15%, rgba(128,128,0,1) 30%, rgba(0,128,128,1) 39%, rgba(255,255,0,1) 50%, rgba(0,255,255,1) 60%, rgba(0,0,255,1) 71%, rgba(255,0,255,1) 86%, rgba(255,0,0,1) 100%); /* ie10+ */
+    background: linear-gradient(45deg, rgba(255,0,0,1) 0%, rgba(128,0,0,1) 15%, rgba(128,128,0,1) 30%, rgba(0,128,128,1) 39%, rgba(255,255,0,1) 50%, rgba(0,255,255,1) 60%, rgba(0,0,255,1) 71%, rgba(255,0,255,1) 86%, rgba(255,0,0,1) 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#FF0000',GradientType=1 ); /* ie6-9 */
+}
+
+section{
+    height: 500px;
+    width: 80%;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-image: url(../img/achtergrond.jpg);
+    background-color: #cccccc;
+}
