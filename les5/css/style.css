@@ -1,0 +1,51 @@
+lu{
+    margin-top: 20px;
+    float: left;animation-iteration-count: 
+}
+
+h2,h3,h4{
+    width: 100%;
+    float: left;
+}
+
+table{
+    margin-bottom: 25px;
+    margin-right: 25px;
+    width: 460px;
+    background-color: #d2d2d2;
+    border: solid 2px black;
+    float: left;
+}
+
+table caption{
+    font-size: 2em;
+    font-weight: 700;
+    border: solid 2px black;
+    border-bottom: 0;
+}
+
+table th, td{
+    width: 150px;
+    border: solid 1px black;
+    text-align: center;
+}
+
+form{
+    width: 460px;
+    float: left;
+}
+
+#box{
+    width: 450px;
+    background: green;
+    text-align: center;
+    float: left;
+    padding: 5px;
+    margin: 0 70% 0 0%;
+}
+
+span{
+    color: red;
+    font-size: 2em;
+    font-weight: 500;
+}
