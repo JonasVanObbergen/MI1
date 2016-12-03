@@ -1,0 +1,408 @@
+@font-face {
+    font-family: nav;
+    src: url(../fonts/ABeeZee-Regular.otf);
+}
+
+@font-face {
+    font-family: nav-italic;
+    src: url(../fonts/ABeeZee-Italic.otf);
+}
+
+@font-face {
+    font-family: text-regular;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: text-light;
+    src: url(../fonts/OpenSans-Light.ttf);
+}
+
+@font-face {
+    font-family: text-bold;
+    src: url(../fonts/OpenSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: text-italic;
+    src: url(../fonts/OpenSans-LightItalic.ttf);
+}
+
+
+
+
+body{
+    background-color: azure;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+body > *{
+        flex: 1 100%;
+}
+
+
+/*NAVIGATIE:*/
+
+nav{
+    width: 100%;
+    position: absolute;
+    -webkit-box-shadow: 0px 6px 12px -2px rgba(0,0,0,0.38);
+    -moz-box-shadow: 0px 6px 12px -2px rgba(0,0,0,0.38);
+    box-shadow: 0px 6px 12px -2px rgba(0,0,0,0.38);
+    transition: 2s;
+}
+
+nav ul{
+    background-color: rgba(255, 255, 255, 0.62);
+    padding: 2em;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap; 
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+nav ul li a{
+    flex-direction: row;
+    text-decoration: none; 
+    color: #4c4b42;
+    font-family: nav;
+    font-size: 1.5em;
+    margin-right: 1em;
+    transition: 0.2s;
+}
+
+nav ul li a:hover{
+    color: #c8773b;
+}
+
+.sticky{
+    position: fixed;
+    background: white;
+    float: left;
+    height: 50px;
+    z-index: 100;
+    transition: all 0.3s;
+}
+
+.sticky ul{
+    font-size: 0.7em;
+}
+
+@keyframes navigatie {
+    0% {opacity: 0;
+    margin-top: -150px;
+    }
+    30% {opacity: 0;
+    margin-top: -150px;
+    }
+    100% {opacity: 1;
+    margin-top: 0;
+    }
+}
+
+#active{
+    color: #c8773b;
+}
+
+#banner{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+#banner img{
+    width: 100%;
+}
+
+#banner a{
+    font-size: 5em;
+    color: white;
+    position: absolute;
+    top: 550px;
+    text-decoration: none;
+    transition: 0.2s;
+     -webkit-animation: mymove 1s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 1s infinite;
+}
+
+#banner a:hover{
+    color: #c8773b;
+    cursor: pointer;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    0%   {top: 550px;}
+    50%  {top: 540px;}
+    100% {top: 550px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    0%   {top: 550px;}
+    50%  {top: 540px;}
+    100% {top: 550px;}
+}
+
+h1{
+    font-size: 8em;
+    font-family: nav;
+    padding: 0.1em 0.5em 0 0.5em;
+    border: solid 0.1em white;
+    color: white;
+    text-align: center;
+    width: 50vw;
+    margin: auto;
+    position: absolute;
+    top: 450px;
+}
+
+h2{
+    color: #c8773b;
+    font-family: text-light;
+    font-size: 2em;
+    padding: 0 0 0 0.4em;
+
+}
+
+h3{
+    color: #c8773b;
+    font-family: text-bold;
+    font-size: 3em;
+    padding: 1em 0 0.3em 0.2em;
+}
+
+h4{
+    color: #c8773b;
+    font-family: text-bold;
+    font-size: 1em;
+    padding: 1em 0 0.3em 1.5em;
+}
+
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+section{
+    width: 50vw;
+    min-width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section article{
+    margin: 2em;
+    margin-bottom: 0.5em;
+    border-bottom: 1px solid #c8773b;
+    display: flex;
+    flex-direction: column;
+}
+
+article img{
+   padding: 1em 0 0 0;
+   width: 350px;
+   border-radius: 0.2em;
+}
+
+section article p{
+    padding: 1em;
+    font-family: text-regular;
+}
+
+section article p a{
+    text-decoration: none;
+    color: #c8773b;
+    transition: 0.2s;
+}
+
+section article:last-child{
+    border: none;
+    margin-bottom: 4em;
+}
+
+aside{
+    padding: 2em;
+    width: 20vw;
+    min-width: 335px;
+    margin: 2em 0 0 0;
+}
+
+aside ul{
+    margin: 0.8em 0 0 0;
+}
+
+aside ul li{
+    margin: 0 0 0.5em 0;
+}
+
+aside ul li a{
+    color: #4c4b42;
+    text-decoration: none;
+    font-family: nav;
+    transition: 0.2s;
+    margin: 5em 0 1em 1em;
+    text-align: left;
+}
+
+aside ul li a span {
+    color: #c8773b;
+}
+
+aside ul li a:hover{
+    color: #c8773b;
+}
+
+#nieuws{
+    background: #dcdcdc;
+    width: 100vw;
+    justify-content: center;
+}
+
+#nieuws article{
+    margin: 1em;
+    width: 20em;
+    border-radius: 0.2em;
+    border-bottom: 5px solid #c8773b;
+    background-color: white;
+    justify-content: center;
+}
+
+#nieuws article img{
+    max-width: 300px;
+    min-width: 300px;
+    border-radius: 0.2em;
+    margin: auto;
+    transition: 0.2s;
+}
+
+#nieuws article date{
+    color: black;
+    padding: 0.2em 0 0 2em;
+    font-family: text-italic;
+    font-size: 0.7em;
+}
+
+#nieuws article a{
+    margin: 0.5em;
+    border-radius: 5em;
+    color: white;
+    border: 1px solid #c8773b;
+    background-color: #c8773b;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.5em 0 0.4em 0;
+    width: 100px;
+    font-family: text-regular;
+    font-size: 0.8em;
+    transition: 0.2s;
+}
+
+#nieuws article a:hover{
+    color: #c8773b;
+    background-color: white;
+}
+
+footer{
+    width: 100vw;
+    background: #c8773b;
+}
+
+footer p{
+    color: white;
+    text-align: center;
+    padding: 2em;
+    font-family: text-light;
+}
+
+/*CONTACT*/
+.fa{
+    font-size: 1.8em;
+    color: #c8773b;
+}
+
+form{
+    width: 80vw;
+}
+
+legend{
+    font-family: nav;
+    color: #c8773b;
+    margin: 0 0 1em 0.2em;
+}
+
+input, textarea{
+    font-family: text-light;
+    padding: 1em;
+    width: 35vw;
+    border: solid 1px #c8773b;
+    border-radius: 1em;
+    margin: 0 0 1em 0;
+}
+
+textarea{
+    max-height: 15vh;
+    height: 15vh;
+    max-width: 35vw;
+}
+
+input:focus{
+    outline: none;
+    border:1px solid green;
+    transition: 1s;
+}
+
+textarea:focus{
+    outline: none;
+    border:1px solid green;
+    transition: 1s;
+}
+
+button{
+    font-family: text-light;
+    font-size: 1em;
+    padding: 1em;
+    width: 15vw;
+    color: white;
+    background-color: #c8773b;
+    border: solid 1px #c8773b;
+    border-radius: 1em;
+    margin: 0 0 1em 0;
+    transition: 0.2s;
+}
+
+button:hover{
+    background-color: white;
+    color: #c8773b;
+    cursor: pointer;
+}
+
+button:focus{
+    outline: none;
+}
+
+
+
+@media screen and (max-width: 500px){
+    
+    nav ul li{
+        width: 100%;
+        text-align: center;
+        flex-wrap: wrap; 
+        transition: 2s;
+    }
+}
