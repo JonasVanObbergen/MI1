@@ -1,0 +1,50 @@
+@font-face {
+    font-family: titel;
+    src: url(fonts/ChristmasTimePersonalUse.ttf);
+}
+
+body{
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#container{
+    background-color: white;
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border: solid 20px darkred;
+    border-radius: 20px;
+}
+
+section{
+    padding: 0 5em 5em 5em;
+    width: 100%;
+}
+
+h1{
+    font-family: titel;
+    font-size: 5em;
+    padding: 1em 0 0 0; 
+    color: #284aa3;
+    text-align: center;
+    width: 100%;
+}
+
+h2{
+    font-family: titel;
+    font-size: 2em;
+    padding: 1em 0 0 0; 
+    color: darkred;
+    text-align: center;
+    width: 100%;
+}
+
+
+article p{
+    font-family: sans-serif;
+}
+
