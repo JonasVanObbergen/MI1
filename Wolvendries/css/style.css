@@ -29,35 +29,29 @@
 }
 
 
-
-
 body{
-    background-color: azure;
+    background-color: white;
     list-style: none;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    
     -webkit-flex-flow: row wrap;
     justify-content: space-around;
+    overflow-x: hidden;
 }
 
-body > *{
-        flex: 1 100%;
-}
 
 
 /*NAVIGATIE*/
 
 nav{
-    width: 100%;
+    width: 100vw;
     position: fixed;
     -webkit-box-shadow: 0px 6px 12px -2px rgba(0,0,0,0.38);
     -moz-box-shadow: 0px 6px 12px -2px rgba(0,0,0,0.38);
     box-shadow: 0px 6px 12px -2px rgba(0,0,0,0.38);
-    transition: 2s;
 }
 
 nav ul{
@@ -66,6 +60,12 @@ nav ul{
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap; 
+    
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
 }
 
 nav ul li{
@@ -80,6 +80,10 @@ nav ul li a{
     font-size: 1.5em;
     margin-right: 1em;
     transition: 0.2s;
+}
+
+nav ul li a:focus{
+    color: red;
 }
 
 nav ul li a:hover{
@@ -104,8 +108,8 @@ nav ul li a:hover{
 
 #banner{
     width: 100vw;
-    display: flex;
     justify-content: center;
+    display: -moz-box;
 }
 
 #banner img{
@@ -118,10 +122,11 @@ nav ul li a:hover{
 #banner a{
     font-size: 5em;
     color: white;
+    left: 50%;
     position: absolute;
     text-decoration: none;
     transition: 0.2s;
-     -webkit-animation: mymove 1s infinite; /* Safari 4.0 - 8.0 */
+     -webkit-animation: mymove 1s infinite;
     animation: mymove 1s infinite;
 }
 
@@ -185,14 +190,17 @@ h5{
 }
 
 #container{
-    display: flex;
     flex-wrap: wrap;
     margin: 75vh 0 0 0; 
     padding: 1em 0 0 0;
     border-top: solid 0.5em #c8773b;
-    width: 100%;
     background-color: #ffffff;
     justify-content: center;
+    width: 100vw;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
 }
 
 section{
@@ -201,6 +209,10 @@ section{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
 }
 
 section article{
@@ -266,8 +278,8 @@ aside ul li a:hover{
 }
 
 #nieuws{
-    background: #f1f1f1;
     width: 100vw;
+    background: #e0e0e0;
     justify-content: center;
 }
 
@@ -334,7 +346,7 @@ footer p{
 }
 
 form{
-    width: 80vw;
+    width: 100vw;
 }
 
 legend{
@@ -417,7 +429,7 @@ article ul li{
 
 #galerij{
     width: 100vw;
-    background-color: azure;
+    background-color: white;
 }
 .grid {
 	max-width: 70%;
@@ -481,13 +493,79 @@ article ul li{
   filter: blur(1px);
 }
 
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
 
-@media screen and (max-width: 500px){
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+
+@media screen and (max-width: 680px){
     
-    nav ul li{
-        width: 100%;
-        text-align: center;
-        flex-wrap: wrap; 
-        transition: 2s;
+    #container{
+        width: 100vw;
+        margin: 20vh 0 0 0;
     }
+    
+    h3 {
+       margin: 0;
+    }
+    
+    aside{
+        display: none;
+    }
+    
+    #banner a{
+        display: none;
+    }
+    
+    #banner img{
+        min-height: 10vh;
+    }
+    
+    /*CONTACT*/
+.fa{
+    font-size: 1.8em;
+    color: #c8773b;
+}
+form{
+    width: 80vw;
+}
+
+legend{
+    font-size: 1.5em;
+}
+
+input, textarea{
+    width: 55vw;
+    border: solid 1px #c8773b;
+    border-radius: 1em;
+    margin: 0 0 1em 0;
+        font-size: 1em;
+}
+
+textarea{
+    height: 15vh;
+    max-width: 60vw;
+    font-size: 1em;
+    width: 55vw;
+}
+
+button{
+    font-size: 1.5em;
+    width: 60vw;
+}
+
+
+
 }
